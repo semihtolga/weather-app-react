@@ -3,7 +3,7 @@ import React, { useState, useEffect } from "react";
 import WeatherCard from "./WeatherCard";
 
 const Main = () => {
-  const [searchText, setSearchText] = useState("ankara");
+  const [searchText, setSearchText] = useState("zanzibar");
   const [allWeather, setAllWeather] = useState([]);
   const [error, setError] = useState("");
   
@@ -26,7 +26,7 @@ const Main = () => {
       setAllWeather([...allWeather, { name, sys, weather, main }]);
     }
   };
-  // console.log(allWeather);
+  console.log(allWeather);
 
   useEffect(() => {
     getWeather();

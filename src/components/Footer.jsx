@@ -5,7 +5,7 @@ const Footer = () => {
     <footer className="page-footer">
       <div className="container">
         <small>
-          Coded by <span>❤</span>Semih TOLGA
+          Coded by <span>Semih TOLGA</span>
         </small>
       </div>
     </footer>
