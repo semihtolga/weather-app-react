@@ -50,8 +50,9 @@ body {
   background-position: center;
   background-size: cover;
   background-repeat: no-repeat;
-  height: 100%;
-  padding: 20px 70px;
+  color: var(--text_dark);
+  min-height: 100vh;
+  /* padding: 20px 70px; */
 }
 
 .container {
@@ -64,7 +65,7 @@ body {
 /* SECTION #1
 –––––––––––––––––––––––––––––––––––––––––––––––––– */
 .top-banner {
-  color: var(--red);
+  color: var(--text_light);
 }
 
 .heading {
@@ -119,7 +120,11 @@ body {
 }
 
 .main {
-  margin: 20px 0 20px;
+  /* margin: 20px 0 20px; */
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin: 0;
 }
 
 .main .cities {
@@ -181,15 +186,26 @@ body {
 
 /* FOOTER
 –––––––––––––––––––––––––––––––––––––––––––––––––– */
-.page-footer {
-  text-align: right;
-  font-size: 2rem;
-  color: var(--text_dark);
-  margin-top: 40px;
+.footer-page {
+  font-size: 1.4rem;
+  color: var(--text_light);
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+  align-items: center;
+  padding: 2rem;
 }
 
-.page-footer span {
-  color: var(--dark);
+footer i {
+  font-size: 1.3rem;
+  color: white;
+  padding-left: 1rem;
+  padding-top: 0.5rem;
+  transition: all 1s;
+}
+
+footer i:hover {
+  color: #bd8e51;
 }
 
 #logo {
